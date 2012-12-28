@@ -10,7 +10,7 @@ Each Spring module is slightly different than another in terms of team size, num
 Not sure what a pull request is, or how to submit one? Take a look at GitHub's excellent [help documentation first](http://help.github.com/send-pull-requests).
 
 # Search JIRA first; create an issue if necessary
-Is there already an issue that addresses your concern? Do a bit of searching in our [JIRA issue tracker](https://jira.springsource.org/browse/SEC) to see if you can find something similar. If not, please create a new issue before submitting a pull request unless the change is truly trivial, e.g. typo fixes, removing compiler warnings, etc.
+Is there already an issue that addresses your concern? Do a bit of searching in our [JIRA issue tracker](https://jira.springsource.org/browse/SEC) to see if you can find something similar. If not, please create a new issue before submitting a pull request unless the change is not a user facing issue.
 
 # Discuss non-trivial contribution ideas with committers
 If you're considering anything more than correcting a typo or fixing a minor bug , please discuss it on the [Spring Security forums](http://forum.springsource.org/forumdisplay.php?33-Security) before submitting a pull request. We're happy to provide guidance but please spend an hour or two researching the subject on your own including searching the forums for prior discussions.
