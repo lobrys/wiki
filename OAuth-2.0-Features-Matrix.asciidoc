@@ -1,7 +1,3 @@
-[[oauth2-features-matrix]]
-= OAuth 2.0 Features Matrix
-
-
 [[oauth2-client-features-matrix]]
 == Client Support
 
