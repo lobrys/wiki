@@ -1,3 +1,10 @@
+The following matrix outlines all the OAuth 2.0 features implemented by the various projects within the Spring portfolio.
+The matrix may be used to determine which project(s) to use based on your OAuth 2.0 requirements.
+
+NOTE: Spring Security 5.0 introduced new _Client_ support for the OAuth 2.0 Authorization Framework and OpenID Connect 1.0.
+ The plan is to also provide support for _Resource Server_ and _Authorization Server_ in future releases.
+ This matrix will be kept up-to-date as we complete new features.
+
 [[oauth2-client-features-matrix]]
 == Client Support
 
