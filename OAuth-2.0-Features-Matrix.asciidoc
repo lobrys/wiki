@@ -1,0 +1,116 @@
+[[oauth2-features-matrix]]
+= OAuth 2.0 Features Matrix
+
+
+[[oauth2-client-features-matrix]]
+== Client Support
+
+[cols="<40,^15,^15,^15,^15",options="header"]
+|===
+|
+| https://projects.spring.io/spring-security/[Spring Security^] (5.0+)
+| http://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
+| https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
+
+| [red]#*_Authorization Grants_*# 4+|
+| Authorization Code | | &#10004; | |
+| Implicit | | &#10004; | |
+| Resource Owner Password Credentials | | &#10004; | |
+| Client Credentials | | &#10004; | |
+| Refresh Token | | &#10004; | |
+
+| [red]#*_Client Authentication Methods_*# 4+|
+| HTTP Basic | &#10004; | &#10004; | |
+| HTTP POST | &#10004; | &#10004; | |
+
+| [red]#*_HTTP Client Support_*# 4+|
+| RestTemplate | | &#10004; | |
+| WebClient | | | |
+
+| [red]#*_User Authentication_*# 4+|
+| OAuth 2.0 Login (SSO) | &#10004; | | | &#10004;
+| UserInfo Endpoint Support | &#10004; | | | &#10004;
+
+| [red]#*_Access Token Usage_*# 4+|
+| Token Relay | | | &#10004; |
+
+| [red]#*_Access Token Storage Management_*# 4+|
+| In-Memory | &#10004; | | |
+| JDBC | | &#10004; | |
+|===
+
+
+[[oauth2-resource-server-features-matrix]]
+== Resource Server Support
+
+[cols="<40,^15,^15,^15,^15",options="header"]
+|===
+|
+| https://projects.spring.io/spring-security/[Spring Security^] (5.0+)
+| http://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
+| https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
+
+| [red]#*_Access Token Formats_*# 4+|
+| Opaque | | &#10004; | |
+| JSON Web Token (JWT) | | &#10004; | |
+
+| [red]#*_Access Token Verification_*# 4+|
+| Opaque (using Introspection Endpoint) | | &#10004; | |
+| JSON Web Signature (MAC) | | &#10004; | |
+| JSON Web Signature (RSA) | | &#10004; | |
+| JSON Web Signature (using JSON Web Key) | | &#10004; | |
+| Custom JWT Claims Set Verifier| | &#10004; | |
+|===
+
+
+[[oauth2-authorization-server-features-matrix]]
+== Authorization Server Support
+
+[cols="<40,^15,^15,^15,^15",options="header"]
+|===
+|
+| https://projects.spring.io/spring-security/[Spring Security^] (5.0+)
+| http://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
+| https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
+
+| [red]#*_Authorization Grants_*# 4+|
+| Authorization Code | | &#10004; | |
+| Implicit | | &#10004; | |
+| Resource Owner Password Credentials | | &#10004; | |
+| Client Credentials | | &#10004; | |
+| Refresh Token | | &#10004; | |
+
+| [red]#*_Protocol Endpoints_*# 4+|
+| Authorization Endpoint | | &#10004; | |
+| Token Endpoint | | &#10004; | |
+| User Approval Endpoint | | &#10004; | |
+| Introspection Endpoint | | &#10004; | |
+
+| [red]#*_Access Token Formats_*# 4+|
+| Opaque | | &#10004; | |
+| JSON Web Signature (MAC) | | &#10004; | |
+| JSON Web Signature (RSA) | | &#10004; | |
+
+| [red]#*_Access Token Storage Management_*# 4+|
+| In-Memory | | &#10004; | |
+| JDBC | | &#10004; | |
+| Redis | | &#10004; | |
+
+| [red]#*_Client Authentication Methods_*# 4+|
+| HTTP Basic | | &#10004; | |
+| HTTP POST | | &#10004; | |
+
+| [red]#*_Client Registration Storage Management_*# 4+|
+| JDBC | | &#10004; | |
+
+| [red]#*_Authorization Code Storage Management_*# 4+|
+| In-Memory | | &#10004; | |
+| JDBC | | &#10004; | |
+
+| [red]#*_User Approval Storage Management_*# 4+|
+| In-Memory | | &#10004; | |
+| JDBC | | &#10004; | |
+|===
