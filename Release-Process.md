@@ -1,5 +1,3 @@
-# Spring Security Release Process
-
 ## Perform a Milestone, RC or GA Release
 
 **NOTE:** This release process uses the [spring-build-conventions](https://github.com/spring-gradle-plugins/spring-build-conventions) gradle plug-in. 
@@ -56,5 +54,5 @@ from the existing milestone you just released to the new milestone and then clos
 
 - Create a [Blog](https://spring.io/admin/blog)
 - Tweet from [@SpringSecurity](https://twitter.com/springsecurity)
-- Send email to [Spring Developer](spring-developer@pivotal.io)
+- Send email to spring-developer@pivotal.io
 - Announce via Slack and cc Andy Wilkinson, Gary Russell and Artem Bilan
