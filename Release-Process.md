@@ -7,11 +7,12 @@
 1. Update dependencies
 2. Update release version
 3. Push the release commit
-4. Tag the release
-5. Update to next development version
-6. Update version on project page
-7. Close / Create Milestone
-8. Announce the release
+4. Announce the release on Slack
+5. Tag the release
+6. Update to next development version
+7. Update version on project page
+8. Close / Create Milestone
+9. Announce the release on other channels
 
 ### Detailed Steps
 
@@ -32,27 +33,30 @@
  
 - Push the release commit and [Jenkins](https://jenkins.spring.io/job/spring-security/) will build and deploy the artifacts
 
-#### 4. Tag the release
+#### 4. Announce the release on Slack
+
+- Announce via Slack on #spring-security and cc Andy Wilkinson, Gary Russell and Artem Bilan
+
+#### 5. Tag the release
 
 - Tag the release and then push the tag
 
-#### 5. Update to next development version
+#### 6. Update to next development version
  
 - Update release version to next `BUILD-SNAPSHOT` version and then push
 
-#### 6. Update version on project page
+#### 7. Update version on project page
 
 - Update release version on [projects.spring.io](https://spring.io/admin/projects/spring-security)
 
-#### 7. Close / Create Milestone
+#### 8. Close / Create Milestone
 
 - In [GitHub Milestones](https://github.com/spring-projects/spring-security/milestones), 
 create a new milestone for the next release version and move any open issues 
 from the existing milestone you just released to the new milestone and then close the milestone for the release.
 
-#### 8. Announce the release
+#### 9. Announce the release on other channels
 
 - Create a [Blog](https://spring.io/admin/blog)
 - Tweet from [@SpringSecurity](https://twitter.com/springsecurity)
 - Send email to spring-developer@pivotal.io
-- Announce via Slack and cc Andy Wilkinson, Gary Russell and Artem Bilan
