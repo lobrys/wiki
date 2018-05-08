@@ -35,7 +35,7 @@
 
 #### 4. Announce the release on Slack
 
-- Announce via Slack on #spring-security and cc Andy Wilkinson, Gary Russell and Artem Bilan
+- Announce via Slack on [#spring-security](https://pivotal.slack.com/messages/spring-security) and cc Andy Wilkinson, Gary Russell and Artem Bilan
 
 #### 5. Tag the release
 
