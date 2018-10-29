@@ -1,8 +1,8 @@
 The following matrix outlines all the OAuth 2.0 features implemented by the various projects within the Spring portfolio.
 The matrix may be used to determine which project(s) to use based on your OAuth 2.0 requirements.
 
-NOTE: Spring Security 5.0 introduced new _Client_ support for the OAuth 2.0 Authorization Framework and OpenID Connect 1.0.
- The plan is to also provide support for _Resource Server_ and _Authorization Server_ in future releases.
+NOTE: Spring Security 5.0 introduced new _Client_ support for the OAuth 2.0 Authorization Framework and OpenID Connect 1.0. Spring Security 5.1 introduced new _Resource Server_ support as well as additional _Client_ support for different grant types.
+ The plan is to also provide support for _Authorization Server_ in future releases.
  This matrix will be kept up-to-date as we complete new features.
 
 For additional information, please see the <<frequently-asked-questions,Frequently Asked Questions>>.
@@ -14,25 +14,25 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://projects.spring.io/spring-security/[Spring Security^] (5.0+)
+| https://projects.spring.io/spring-security/[Spring Security^] (5.1+)
 | http://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
 | [red]#*_Authorization Grants_*# 4+|
-| Authorization Code | | &#10004; | |
-| Implicit | | &#10004; | |
+| Authorization Code | &#10004; | &#10004; | |
+| Implicit | &#10004; | &#10004; | |
 | Resource Owner Password Credentials | | &#10004; | |
-| Client Credentials | | &#10004; | |
-| Refresh Token | | &#10004; | |
+| Client Credentials | &#10004; | &#10004; | |
+| Refresh Token | &#10004; | &#10004; | |
 
 | [red]#*_Client Authentication Methods_*# 4+|
 | HTTP Basic | &#10004; | &#10004; | |
 | HTTP POST | &#10004; | &#10004; | |
 
 | [red]#*_HTTP Client Support_*# 4+|
-| RestTemplate | | &#10004; | |
-| WebClient | | | |
+| RestTemplate | partial | &#10004; | |
+| WebClient | partial | | |
 
 | [red]#*_User Authentication_*# 4+|
 | OAuth 2.0 Login (SSO) | &#10004; | | | &#10004;
@@ -60,14 +60,14 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 
 | [red]#*_Access Token Formats_*# 4+|
 | Opaque | | &#10004; | |
-| JSON Web Token (JWT) | | &#10004; | |
+| JSON Web Token (JWT) | &#10004; | &#10004; | |
 
 | [red]#*_Access Token Verification_*# 4+|
 | Opaque (using Introspection Endpoint) | | &#10004; | |
 | JSON Web Signature (MAC) | | &#10004; | |
 | JSON Web Signature (RSA) | | &#10004; | |
-| JSON Web Signature (using JSON Web Key) | | &#10004; | |
-| Custom JWT Claims Set Verifier| | &#10004; | |
+| JSON Web Signature (using JSON Web Key) | &#10004; | &#10004; | |
+| Custom JWT Claims Set Verifier | &#10004; | &#10004; | |
 |===
 
 
