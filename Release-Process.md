@@ -32,6 +32,8 @@
 #### 3. Push the release commit
  
 - Push the release commit and [Jenkins](https://jenkins.spring.io/job/spring-security/) will build and deploy the artifacts
+- If you would like to be notified when the artifacts are deployed to Maven Central, modify the version in the following script and run it:
+    - `until http -h --check-status http://repo1.maven.org/maven2/org/springframework/security/spring-security-core/5.1.5.RELEASE/; do sleep 10; done; say "It is now uploaded";`
 
 #### 4. Announce the release on Slack
 
