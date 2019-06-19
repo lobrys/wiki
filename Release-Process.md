@@ -102,6 +102,7 @@ from the existing milestone you just released to the new milestone and then clos
 ![Release form](https://user-images.githubusercontent.com/3627351/59800582-3bf95a80-92a4-11e9-9beb-040b74ff209a.png)
 
 * Click `Update`. Wait for it to complete.
+
 ![Release Promotion completed](https://user-images.githubusercontent.com/3627351/59800350-a067ea00-92a3-11e9-98e5-00d5b5fcd064.png)
 
 * Click on Artifactory Build Info
