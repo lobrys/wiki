@@ -1,3 +1,5 @@
+# For Versions 5+
+
 ## Perform a Milestone, RC or GA Release
 
 **NOTE:** This release process uses the [spring-build-conventions](https://github.com/spring-gradle-plugins/spring-build-conventions) gradle plug-in. 
@@ -62,3 +64,35 @@ from the existing milestone you just released to the new milestone and then clos
 - Create a [Blog](https://spring.io/admin/blog)
 - Tweet from [@SpringSecurity](https://twitter.com/springsecurity)
 - Send email to spring-developer@pivotal.io
+
+# For Spring Security 4.2.x
+
+* Visit https://build.spring.io/browse/SEC-B42X 
+* Log In
+* Ensure you have admin permissions for the build
+* Make sure last build is successful
+* Then click on the build number of the last build (has picture)
+* Click the arrow on the left hand side below the details (has picture)
+* Click on Default Job (has picture)
+* Click on Artifactory Release & Promotion (has picture)
+* Fill out the form with the correct values. Use the screenshot below for an example (has picture)
+* Click `Build and Release to Artifactory`
+* A build will start for the release. When it completes (will have "Manual run by ..." next to it) click on the build number (has picture)
+* Click on Artifactory Release & Promotion again (no screenshot)
+* Fill out form for release (see screenshot).
+* Click `Update`. Wait for it to complete.
+
+* Click on Artifactory Build Info
+* Invoke the the scripts in scripts/release/ to release with necessary arguments. Get all the secrets from LastPass
+
+```
+$ ./scripts/release/push-to-spring-distributions.sh $BUILD_NUMBER_FROM_BAMBOO
+$ ./scripts/release/sync-to-central.sh $RELEASE_VERSION $BINTRAY_API_KEY $SONATYPE_USER_TOKEN $SONATYPE_TOKEN_PWD
+$ ./scripts/release/wait-for-done.sh $RELEASE_VERSION
+```
+You will get a notification when the release is done.
+
+NOTE: wait-for-done only works if you have spd-say installed.
+
+
+
