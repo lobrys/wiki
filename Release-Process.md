@@ -71,16 +71,38 @@ from the existing milestone you just released to the new milestone and then clos
 * Log In
 * Ensure you have admin permissions for the build
 * Make sure last build is successful
-* Then click on the build number of the last build (has picture)
-* Click the arrow on the left hand side below the details (has picture)
-* Click on Default Job (has picture)
-* Click on Artifactory Release & Promotion (has picture)
-* Fill out the form with the correct values. Use the screenshot below for an example (has picture)
+* Then click on the build number of the last build
+
+![Latest Build](https://user-images.githubusercontent.com/3627351/59799650-005d9100-92a2-11e9-95d0-06ebaaf90b57.png)
+
+* Click the arrow on the left hand side below the details
+
+![Left-hand Arrow](https://user-images.githubusercontent.com/3627351/59799760-43b7ff80-92a2-11e9-8347-6b431946c1fe.png)
+
+* Click on Default Job
+
+![Default Job Link](https://user-images.githubusercontent.com/3627351/59799865-811c8d00-92a2-11e9-96e4-0d0f53cb0058.png)
+
+* Click on Artifactory Release & Promotion
+
+![Artifactory Release & Promotion Link](https://user-images.githubusercontent.com/3627351/59800702-88dd3100-92a4-11e9-81c8-ed2405353d71.png)
+
+* Fill out the form with the correct values. Use the screenshot below for an example
+
+![Staging Release Configuration](https://user-images.githubusercontent.com/3627351/59800651-68ad7200-92a4-11e9-837b-b4caf13821dc.png)
+
 * Click `Build and Release to Artifactory`
-* A build will start for the release. When it completes (will have "Manual run by ..." next to it) click on the build number (has picture)
-* Click on Artifactory Release & Promotion again (no screenshot)
-* Fill out form for release (see screenshot).
+* A build will start for the release. When it completes (will have "Manual run by ..." next to it) click on the build number
+
+![Build Completed](https://user-images.githubusercontent.com/3627351/59800229-41a27080-92a3-11e9-838c-9eaefa79b9a8.png)
+
+* Click on Artifactory Release & Promotion again
+* Fill out form for release
+
+![Release form](https://user-images.githubusercontent.com/3627351/59800582-3bf95a80-92a4-11e9-9beb-040b74ff209a.png)
+
 * Click `Update`. Wait for it to complete.
+![Release Promotion completed](https://user-images.githubusercontent.com/3627351/59800350-a067ea00-92a3-11e9-98e5-00d5b5fcd064.png)
 
 * Click on Artifactory Build Info
 * Invoke the the scripts in scripts/release/ to release with necessary arguments. Get all the secrets from LastPass
