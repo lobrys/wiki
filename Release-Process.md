@@ -49,7 +49,10 @@
 
 #### 5. Announce the release on Slack
 
-- Announce via Slack on [#spring-security](https://pivotal.slack.com/messages/spring-security) and cc Andy Wilkinson, Gary Russell and Artem Bilan
+- Announce via Slack on [#spring-security](https://pivotal.slack.com/messages/spring-security), including the keyword `spring-security-release` in the message. Something like:
+```
+spring-security-release 5.2.0.RC1 is out!
+```
 
 #### 6. Tag the release
 
