@@ -42,9 +42,9 @@
 #### 4. Push the release commit
  
 - Push the release commit and [Jenkins](https://jenkins.spring.io/job/spring-security/) will build and deploy the artifacts
-- If you would like to be notified when the artifacts are deployed to Maven Central, modify the version in the following script and run it:
+- If you are pushing to Maven Central, then you can get notified when it's uploaded by running the following:
 ```bash
-./scripts/release/wait-for-done.sh 5.1.6.RELEASE
+./scripts/release/wait-for-done.sh 5.2.0.RELEASE
 ```
 
 #### 5. Announce the release on Slack
@@ -57,6 +57,10 @@ spring-security-release 5.2.0.RC1 is out!
 #### 6. Tag the release
 
 - Tag the release and then push the tag
+```
+git tag 5.2.0.RC1
+git push origin 5.2.0.RC1
+```
 
 #### 7. Update to next development version
  
