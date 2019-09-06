@@ -15,7 +15,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 |===
 |
 | https://projects.spring.io/spring-security/[Spring Security^] (5.1+)
-| http://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
@@ -54,7 +54,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 |===
 |
 | https://projects.spring.io/spring-security/[Spring Security^] (5.1+)
-| http://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
@@ -78,7 +78,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 |===
 |
 | https://projects.spring.io/spring-security/[Spring Security^] (5.0+)
-| http://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
@@ -130,8 +130,8 @@ For additional information, please see the <<frequently-asked-questions,Frequent
   The next generation of OAuth 2.0 support is currently underway in Spring Security 5,
   as we introduced new _Client_ support for the OAuth 2.0 Authorization Framework and OpenID Connect Core 1.0.
   The plan is to also provide support for _Resource Server_ by mid-2018 and _Authorization Server_ by the end of 2018 or early 2019
-  along with more extensive support for https://oauth.net/2/[OAuth 2.0 Core and Extensions^], http://openid.net/connect/[OpenID Connect 1.0^] and
-  http://jose.readthedocs.io/en/latest/[Javascript Object Signing and Encryption (JOSE)^].
+  along with more extensive support for https://oauth.net/2/[OAuth 2.0 Core and Extensions^], https://openid.net/connect/[OpenID Connect 1.0^] and
+  https://jose.readthedocs.io/en/latest/[Javascript Object Signing and Encryption (JOSE)^].
 *Where can I find out more information on which OAuth 2.0 and OpenID Connect 1.0 features will be implemented in Spring Security 5?*::
   You may track upcoming features in the https://github.com/spring-projects/spring-security/issues[Spring Security GitHub^] repo using the
   https://github.com/spring-projects/spring-security/labels/OAuth2[OAuth2^],
