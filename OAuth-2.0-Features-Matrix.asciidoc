@@ -134,9 +134,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
   https://jose.readthedocs.io/en/latest/[Javascript Object Signing and Encryption (JOSE)^].
 *Where can I find out more information on which OAuth 2.0 and OpenID Connect 1.0 features will be implemented in Spring Security 5?*::
   You may track upcoming features in the https://github.com/spring-projects/spring-security/issues[Spring Security GitHub^] repo using the
-  https://github.com/spring-projects/spring-security/labels/OAuth2[OAuth2^],
-  https://github.com/spring-projects/spring-security/labels/OIDC[OIDC^] and
-  https://github.com/spring-projects/spring-security/labels/JWT-JOSE[JWT-JOSE^] labels.
+  https://github.com/spring-projects/spring-security/labels/in%3A%20oauth2[in: oauth2^] label.
 *Where can I find samples and documentation for Spring Security 5 OAuth 2.0 support?*::
   Spring Security 5 introduced the new OAuth 2.0 Login feature along with a
   https://github.com/spring-projects/spring-security/tree/5.0.1.RELEASE/samples/boot/oauth2login[sample^] and detailed
