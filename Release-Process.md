@@ -27,6 +27,7 @@
 ```bash
 ./scripts/update-dependencies.sh
 ```
+_Prerequisites: The `build` directory has to exist to store the file `build/updates.txt`. This directory gets created when a new build is run, but is not present on a fresh git clone._
 
 #### 2. Update release version
  
