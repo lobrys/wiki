@@ -6,16 +6,17 @@
 
 ### Process Overview
 
-1. Update dependencies
-2. Update release version
-3. Build Locally
-4. Push the release commit
-5. Announce the release on Slack
-6. Tag the release
-7. Update to next development version
-8. Update version on project page
-9. Close / Create Milestone
-10. Announce the release on other channels
+1. [Update dependencies](#1-update-dependencies)
+2. [Update release version](#2-update-release-version)
+3. [Build Locally](#3-build-locally)
+4. [Push the release commit](#4-push-the-release-commit)
+5. [Announce the release on Slack](#5-announce-the-release-on-slack)
+6. [Tag the release](#6-tag-the-release)
+7. [Update to next development version](#7-update-to-next-development-version)
+8. [Update version on project page](#8-update-version-on-project-page)
+9. [Close / Create Milestone](#9-close--create-milestone)
+10. [Announce the release on other channels](#10-announce-the-release-on-other-channels)
+
 
 ### Detailed Steps
 
