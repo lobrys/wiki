@@ -14,8 +14,9 @@
 6. [Tag the release](#6-tag-the-release)
 7. [Update to next development version](#7-update-to-next-development-version)
 8. [Update version on project page](#8-update-version-on-project-page)
-9. [Close / Create Milestone](#9-close--create-milestone)
-10. [Announce the release on other channels](#10-announce-the-release-on-other-channels)
+9. [Update Release Notes on GitHub](#9-update-release-notes)
+10. [Close / Create Milestone](#10-close--create-milestone)
+11. [Announce the release on other channels](#11-announce-the-release-on-other-channels)
 
 
 ### Detailed Steps
@@ -72,23 +73,37 @@ git push origin 5.2.0.RC1
 
 - Update release version on [projects.spring.io](https://spring.io/admin/projects/spring-security)
 
-#### 9. Close / Create Milestone
+#### 9. Update Release Notes on GitHub
+
+- Download [the GitHub release notes generator](https://github.com/spring-io/github-release-notes-generator/releases/latest)
+```
+wget https://github.com/spring-io/github-release-notes-generator/releases/download/v0.0.2/github-release-notes-generator.jar
+```
+
+- Generate the release notes
+```
+java -jar github-release-notes-generator.jar \
+    --releasenotes.github.organization=spring-projects \
+    --releasenotes.github.repository=spring-security \
+    $MILESTONE release-notes
+```
+Note that `$MILESTONE` is something like `5.2.1` or `5.3.0.M1`. This will create a file on your filesystem called `release-notes`.
+
+- Copy the release notes to your clipboard (your mileage may vary with the following command)
+```
+cat release-notes | xclip -selection clipboard
+```
+
+- Create the [release on GitHub](https://github.com/spring-projects/spring-security/releases), associate it with the tag, and paste the generated notes
+
+#### 10. Close / Create Milestone
 
 - In [GitHub Milestones](https://github.com/spring-projects/spring-security/milestones), 
-create a new milestone for the next release version and move any open issues 
-from the existing milestone you just released to the new milestone and then close the milestone for the release.
-- Update the Github Release notes with [auto generated content](https://github.com/spring-io/github-release-notes-generator)
-  - Download the release note generator - https://github.com/spring-io/github-release-notes-generator
-  - Run the command
-    ```
-    java -jar /path/to/github-release-notes-generator.jar \\
-        --releasenotes.github.organization=spring-projects \\
-        --releasenotes.github.repository=spring-security \\
-        <milestone number> <output file>
-    ```
-  - Create the [release on Github](https://github.com/spring-projects/spring-security/releases) and associate it with the tag.
+create a new milestone for the next release version
+- Move any open issues from the existing milestone you just released to the new milestone
+- Close the milestone for the release.
 
-#### 10. Announce the release on other channels
+#### 11. Announce the release on other channels
 
 - Create a [Blog](https://spring.io/admin/blog)
 - Tweet from [@SpringSecurity](https://twitter.com/springsecurity)
