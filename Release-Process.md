@@ -76,6 +76,16 @@ git push origin 5.2.0.RC1
 - In [GitHub Milestones](https://github.com/spring-projects/spring-security/milestones), 
 create a new milestone for the next release version and move any open issues 
 from the existing milestone you just released to the new milestone and then close the milestone for the release.
+- Update the Github Release notes with [auto generated content](https://github.com/spring-io/github-release-notes-generator)
+  - Download the release note generator - https://github.com/spring-io/github-release-notes-generator
+  - Run the command
+    ```
+    java -jar /path/to/github-release-notes-generator.jar \\
+        --releasenotes.github.organization=spring-projects \\
+        --releasenotes.github.repository=spring-security \\
+        <milestone number> <output file>
+    ```
+  - Create the [release on Github](https://github.com/spring-projects/spring-security/releases) and associate it with the tag.
 
 #### 10. Announce the release on other channels
 
