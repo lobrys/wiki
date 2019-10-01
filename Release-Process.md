@@ -14,7 +14,7 @@
 6. [Tag the release](#6-tag-the-release)
 7. [Update to next development version](#7-update-to-next-development-version)
 8. [Update version on project page](#8-update-version-on-project-page)
-9. [Update Release Notes on GitHub](#9-update-release-notes)
+9. [Update Release Notes on GitHub](#9-update-release-notes-on-github)
 10. [Close / Create Milestone](#10-close--create-milestone)
 11. [Announce the release on other channels](#11-announce-the-release-on-other-channels)
 
