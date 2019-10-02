@@ -127,27 +127,26 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 
 [qanda]
 *What is the future of OAuth 2.0 support in Spring Security?*::
-  The next generation of OAuth 2.0 support is currently underway in Spring Security 5,
-  as we introduced new _Client_ support for the OAuth 2.0 Authorization Framework and OpenID Connect Core 1.0.
-  The plan is to also provide support for _Resource Server_ by mid-2018 and _Authorization Server_ by the end of 2018 or early 2019
-  along with more extensive support for https://oauth.net/2/[OAuth 2.0 Core and Extensions^], https://openid.net/connect/[OpenID Connect 1.0^] and
-  https://jose.readthedocs.io/en/latest/[Javascript Object Signing and Encryption (JOSE)^].
+  The next generation of OAuth 2.0 support is being added throughout the Spring Security 5 release train.
+  As of Spring Security 5.2, there is built-in support for OAuth 2.0 Login, Client, and Resource Server, with a breakdown visible in the above matrix.
+  We plan to continue to add features for _Client_ and _Resource Server_ pertaining to the https://oauth.net/2/[OAuth 2.0 Core and Extensions^], https://openid.net/connect/[OpenID Connect 1.0^] and
+  https://jose.readthedocs.io/en/latest/[Javascript Object Signing and Encryption (JOSE)^] specifications.
 *Where can I find out more information on which OAuth 2.0 and OpenID Connect 1.0 features will be implemented in Spring Security 5?*::
   You may track upcoming features in the https://github.com/spring-projects/spring-security/issues[Spring Security GitHub^] repo using the
   https://github.com/spring-projects/spring-security/labels/in%3A%20oauth2[in: oauth2^] label.
 *Where can I find samples and documentation for Spring Security 5 OAuth 2.0 support?*::
   Spring Security 5 introduced the new OAuth 2.0 Login feature along with a
-  https://github.com/spring-projects/spring-security/tree/5.0.1.RELEASE/samples/boot/oauth2login[sample^] and detailed
-  https://docs.spring.io/spring-security/site/docs/5.0.1.RELEASE/reference/htmlsingle/#jc-oauth2login[documentation^].
+  https://github.com/spring-projects/spring-security/tree/5.2.0.RELEASE/samples/boot/oauth2login[sample^] and detailed
+  https://docs.spring.io/spring-security/site/docs/5.2.0.RELEASE/reference/htmlsingle/#jc-oauth2login[documentation^]. Several other OAuth 2.0 samples are available in the same repo.
   We will continue to provide samples and documentation as we build out new features.
-*Are there new features being implemented in Spring Security OAuth 2.2+?*::
+*Are there new features being implemented in Spring Security OAuth 2.3+?*::
   We will provide bug/security fixes and consider adding minor features but we will not be adding major features.
   Our plan going forward is to build all the features currently in Spring Security OAuth into Spring Security 5.x.
   After Spring Security has reached feature parity with Spring Security OAuth,
   we will continue to support bugs and security fixes for at least one year.
 *Does Spring Boot 2.0 provide support for Spring Security OAuth?*::
   Spring Boot 2.0 has dropped support for Spring Security OAuth.
-  However, it provides support for the new OAuth 2.0 Login feature in Spring Security 5.
+  However, it provides support for OAuth 2.0 Login, OAuth 2.0 Client, and OAuth 2.0 Resource Server in Spring Security 5.
 *Is there a way to integrate Spring Security OAuth in Spring Boot 2.0?*::
   The https://github.com/spring-projects/spring-security-oauth2-boot[Spring Security OAuth Boot 2 Autoconfig^] project is a port
   of the Spring Security OAuth auto-configuration contained in Spring Boot 1.5.x.
