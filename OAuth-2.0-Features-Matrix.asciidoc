@@ -31,7 +31,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | HTTP POST | &#10004; | &#10004; | |
 
 | [red]#*_HTTP Client Support_*# 4+|
-| RestTemplate ^1^ | &#10004; | &#10004; | |
+| RestTemplate ^[1]^ | &#10004; | &#10004; | |
 | WebClient | &#10004; | | |
 
 | [red]#*_User Authentication_*# 4+|
