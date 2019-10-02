@@ -138,7 +138,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 *Where can I find samples and documentation for Spring Security 5 OAuth 2.0 support?*::
   Spring Security 5 introduced the new OAuth 2.0 Login feature along with a
   https://github.com/spring-projects/spring-security/tree/5.2.0.RELEASE/samples/boot/oauth2login[sample^] and detailed
-  https://docs.spring.io/spring-security/site/docs/5.2.0.RELEASE/reference/htmlsingle/#jc-oauth2login[documentation^]. Several other OAuth 2.0 samples are available in the same repo.
+  https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2login[documentation^]. Several other OAuth 2.0 samples are available in the same repo.
   We will continue to provide samples and documentation as we build out new features.
 *Are there new features being implemented in Spring Security OAuth 2.3+?*::
   We will provide bug/security fixes and consider adding minor features but we will not be adding major features.
