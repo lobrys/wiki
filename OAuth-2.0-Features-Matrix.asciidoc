@@ -14,7 +14,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://projects.spring.io/spring-security/[Spring Security^] (5.1+)
+| https://projects.spring.io/spring-security/[Spring Security^] (5.2+)
 | https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
@@ -22,7 +22,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | [red]#*_Authorization Grants_*# 4+|
 | Authorization Code | &#10004; | &#10004; | |
 | Implicit | &#10004; | &#10004; | |
-| Resource Owner Password Credentials | | &#10004; | |
+| Resource Owner Password Credentials | &#10004; | &#10004; | |
 | Client Credentials | &#10004; | &#10004; | |
 | Refresh Token | &#10004; | &#10004; | |
 
@@ -59,13 +59,13 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
 | [red]#*_Access Token Formats_*# 4+|
-| Opaque | | &#10004; | |
+| Opaque | &#10004; | &#10004; | |
 | JSON Web Token (JWT) | &#10004; | &#10004; | |
 
 | [red]#*_Access Token Verification_*# 4+|
-| Opaque (using Introspection Endpoint) | | &#10004; | |
-| JSON Web Signature (MAC) | | &#10004; | |
-| JSON Web Signature (RSA) | | &#10004; | |
+| Opaque (using Introspection Endpoint) | &#10004; | &#10004; | |
+| JSON Web Signature (MAC) | &#10004; | &#10004; | |
+| JSON Web Signature (RSA) | &#10004; | &#10004; | |
 | JSON Web Signature (using JSON Web Key) | &#10004; | &#10004; | |
 | Custom JWT Claims Set Verifier | &#10004; | &#10004; | |
 |===
