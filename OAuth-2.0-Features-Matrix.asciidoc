@@ -31,7 +31,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | HTTP POST | &#10004; | &#10004; | |
 
 | [red]#*_HTTP Client Support_*# 4+|
-| RestTemplatefootnote:[RestTemplate may collaborate with https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2Client-authorized-manager-provider[DefaultOAuth2AuthorizedClientManager]] | &#10004; | &#10004; | |
+| RestTemplate ^1^ | &#10004; | &#10004; | |
 | WebClient | &#10004; | | |
 
 | [red]#*_User Authentication_*# 4+|
@@ -42,6 +42,8 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | In-Memory | &#10004; | | |
 | JDBC | | &#10004; | |
 |===
+
+1. RestTemplate may collaborate with https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2Client-authorized-manager-provider[DefaultOAuth2AuthorizedClientManager]
 
 [[oauth2-resource-server-features-matrix]]
 == Resource Server Support
