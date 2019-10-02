@@ -130,7 +130,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 *What is the future of OAuth 2.0 support in Spring Security?*::
   The next generation of OAuth 2.0 support is being added throughout the Spring Security 5 release train.
   As of Spring Security 5.2, there is built-in support for OAuth 2.0 Login, Client, and Resource Server, with a breakdown visible in the above matrix.
-  We plan to continue to add features for _Client_ and _Resource Server_ pertaining to the https://oauth.net/2/[OAuth 2.0 Core and Extensions^], https://openid.net/connect/[OpenID Connect 1.0^] and
+  We plan to continue to add features for Client and Resource Server pertaining to the https://oauth.net/2/[OAuth 2.0 Core and Extensions^], https://openid.net/connect/[OpenID Connect 1.0^] and
   https://jose.readthedocs.io/en/latest/[Javascript Object Signing and Encryption (JOSE)^] specifications.
 *Where can I find out more information on which OAuth 2.0 and OpenID Connect 1.0 features will be implemented in Spring Security 5?*::
   You may track upcoming features in the https://github.com/spring-projects/spring-security/issues[Spring Security GitHub^] repo using the
