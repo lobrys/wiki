@@ -31,15 +31,12 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | HTTP POST | &#10004; | &#10004; | |
 
 | [red]#*_HTTP Client Support_*# 4+|
-| RestTemplate | partial | &#10004; | |
-| WebClient | partial | | |
+| RestTemplate (in collaboration with DefaultOAuth2AuthorizedClientManager) | &#10004; | &#10004; | |
+| WebClient | &#10004; | | |
 
 | [red]#*_User Authentication_*# 4+|
 | OAuth 2.0 Login (SSO) | &#10004; | | | &#10004;
 | UserInfo Endpoint Support | &#10004; | | | &#10004;
-
-| [red]#*_Access Token Usage_*# 4+|
-| Token Relay | | | &#10004; |
 
 | [red]#*_Access Token Storage Management_*# 4+|
 | In-Memory | &#10004; | | |
@@ -61,6 +58,9 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | [red]#*_Access Token Formats_*# 4+|
 | Opaque | &#10004; | &#10004; | |
 | JSON Web Token (JWT) | &#10004; | &#10004; | |
+
+| [red]#*_Access Token Usage_*# 4+|
+| Token Relay | &#10004; | | &#10004; |
 
 | [red]#*_Access Token Verification_*# 4+|
 | Opaque (using Introspection Endpoint) | &#10004; | &#10004; | |
