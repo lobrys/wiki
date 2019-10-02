@@ -53,7 +53,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://projects.spring.io/spring-security/[Spring Security^] (5.1+)
+| https://projects.spring.io/spring-security/[Spring Security^] (5.2+)
 | https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
@@ -77,7 +77,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://projects.spring.io/spring-security/[Spring Security^] (5.0+)
+| https://projects.spring.io/spring-security/[Spring Security^] (5.2+)
 | https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
