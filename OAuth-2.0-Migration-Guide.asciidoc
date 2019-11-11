@@ -1,3 +1,7 @@
+This document contains guidance for moving from Spring Security OAuth 2.x to Spring Security 5.2.x.
+
+Because the two approaches are as different as they are, this document will tend to cover patterns more than precise search-and-replace steps.
+
 [[oauth2-client]]
 == Client
 
@@ -6,7 +10,51 @@ TODO
 [[oauth2-resource-server]]
 == Resource Server
 
-TODO
+=== Changes In Approach
+
+https://github.com/spring-projects/spring-security[Spring Security] takes a slightly different approach from https://github.com/spring-projects/spring-security-oauth[Spring Security OAuth] in a few notable ways.
+
+==== A Simplified DSL
+
+Spring Security OAuth exposes https://github.com/spring-projects/spring-security-oauth/blob/master/spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/ResourceServerConfigurerAdapter.java#L25-L29[two different DSLs] for Resource Server. These are configured by extending `ResourceServerConfigurerAdapter`.
+
+Spring Security exposes the same functionality https://github.com/spring-projects/spring-security/blob/master/config/src/main/java/org/springframework/security/config/annotation/web/builders/HttpSecurity.java#L2308[via the Spring Security DSL], which is configured by extending `WebSecurityConfigurerAdapter`.
+
+==== Simplified Enablement
+
+Spring Security OAuth's Resource Server support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#oauth2-boot-resource-server-minimal[adding the `@EnableResourceServer` annotation].
+
+Spring Security's Resource Server support is enabled via the Spring Security DSL.
+
+==== Simplified Authorization Configuration
+
+Spring Security OAuth indicates two locations for specifying authorization rules. The first is via `ResourceServerConfigurerAdapter` - any rules supplied here are for when a bearer token is present. The second is via `WebSecurityConfigurerAdapter` - any rules supplied here are for requests where a bearer token is absent.
+
+Spring Security indicates that all authorization rules be configured via one or many `WebSecurityConfigurerAdapter` s.
+
+==== Simplified SpEL
+
+Spring Security OAuth supports a custom SpEL variable called `oauth2`. 
+To authorize requests or methods based on scope, you write https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#oauth2-boot-resource-server-authorization[an expression like `access("#oauth2.hasScope('scope')")`].
+
+Spring Security converts scopes that follow the granted authority naming convention.
+To authorize requests or methods based on scope, you write https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#webflux-oauth2resourceserver-jwt-authorization[an expression like `hasAuthority("SCOPE_scope")`].
+
+=== Examples Matrix
+
+Both Spring Security and Spring Security OAuth2 Boot have examples for how to configure Resource Server:
+
+[options="header"]
+|===
+| Use case | Spring Security | Spring Security OAuth
+
+| JWT + JWK | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver[Sample] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-resource-jwt[Sample]
+| JWT + Key | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-static[Sample] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#oauth2-boot-resource-server-jwt-single-key[Doc]
+| Opaque Token | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-opaque[Sample] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-resource[Sample]
+| w/ Actuator | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#multiple-httpsecurity[Doc] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-actuator[Sample]
+| Audience Validation | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2resourceserver-jwt-validation-custom[Doc] |
+| Authorizing Requests | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2resourceserver-jwt-authorization[Doc] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#oauth2-boot-resource-server-authorization[Doc]
+|===
 
 [[oauth2-authorization-server]]
 == Authorization Server
