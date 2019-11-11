@@ -5,7 +5,60 @@ Because the two approaches are as different as they are, this document will tend
 [[oauth2-client]]
 == Client
 
-TODO
+=== Changes In Approach
+
+https://github.com/spring-projects/spring-security[Spring Security] takes a slightly different approach from https://github.com/spring-projects/spring-security-oauth[Spring Security OAuth] in a few notable ways.
+
+==== Simplified Enablement
+
+Spring Security OAuth's Client support for the Authorization Code flow is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-single-sign-on[adding the `@EnableOAuth2Client` annotation].
+For other flows, an `OAuth2ClientContext` instance needs to be constructed and exposed.
+
+Spring Security's OAuth 2.0 Client support is enabled via the Spring Security `oauth2Client` DSL method.
+
+==== A Simplified `RestTemplate` and `WebClient`
+
+Spring Security OAuth extends `RestTemplate`, introducing `OAuth2RestTemplate`.
+This class needs to be instantiated and exposed as a `@Bean`.
+
+Spring Security chooses to favor composition and instead exposes an `OAuth2AuthorizedClientService`, which is useful for creating `RestTemplate` interceptors or `WebClient` exchange filter functions.
+Spring Security provides `ExchangeFilterFunction` s for both Servlet- and WebFlux-based applications that both leverage this service.
+
+==== Simplified Client Resolution
+
+To retrieve the currently authorized client in Spring Security OAuth, you autowire an `OAuth2ClientContext` instance.
+Spring Security OAuth makes use of Spring MVCs request and session scope to store the `OAuth2ClientContext` instance.
+
+To retrieve the currently authorized client in Spring Security, you use the `@RegisteredOAuth2AuthorizedClient` method parameter annotation.
+Spring Security stores the authorized client in its own `OAuth2AuthorizedClientRepository`. 
+
+==== Enhanced Client Registration
+
+Spring Security OAuth exposes a single client configuration via Spring Boot properties.
+
+Spring Security uses its `ClientRegistrationRepository` to represent clients, which can be supplied via the Spring Security DSL.
+Or, these can likewise be configured via Spring Boot.
+
+==== Simplified JWT Support
+
+Spring Security OAuth provides its own JWT support via `spring-security-jwt`.
+
+Spring Security relies on Nimbus for its JWT support.
+
+[[oauth2-login]]
+== Login
+
+=== Changes In Approach
+
+https://github.com/spring-projects/spring-security[Spring Security] takes a slightly different approach from https://github.com/spring-projects/spring-security-oauth[Spring Security OAuth] in a few notable ways.
+
+NOTE: Spring Security refers to this feature as OAuth 2.0 Login while Spring Security OAuth refers to it as SSO
+
+==== Simplified Enablement
+
+Spring Security OAuth's SSO support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-single-sign-on[adding the `@EnableOAuth2Sso` annotation].
+
+Spring Security's OAuth 2.0 Login support is enabled via the Spring Security `oauth2Login()` DSL method.
 
 [[oauth2-resource-server]]
 == Resource Server
@@ -13,6 +66,12 @@ TODO
 === Changes In Approach
 
 https://github.com/spring-projects/spring-security[Spring Security] takes a slightly different approach from https://github.com/spring-projects/spring-security-oauth[Spring Security OAuth] in a few notable ways.
+
+==== Simplified Enablement
+
+Spring Security OAuth's Resource Server support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-resource-server[adding the `@EnableResourceServer` annotation].
+
+Spring Security's Resource Server support is enabled via the Spring Security `oauth2ResourceServer` DSL method.
 
 ==== A Simplified DSL
 
