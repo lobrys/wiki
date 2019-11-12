@@ -138,8 +138,3 @@ This is still simple in Spring Security, though, via the `jwtAuthenticationConve
 In Spring Security OAuth, you can assign an identifier to the resource server via the `ResourceServerSecurityConfigurer#resourceId` method. This configures the realm name used by the authentication entry point as well as adds audience validation.
 No such identifier is planned for Spring Security. 
 However, audience validation and a custom realm name are both simple to achieve by configuring an `OAuth2TokenValidator` and `AuthenticationEntryPoint` respectively.
-
-[[oauth2-authorization-server]]
-== Authorization Server
-
-TODO
