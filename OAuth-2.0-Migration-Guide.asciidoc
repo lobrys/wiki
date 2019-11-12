@@ -45,6 +45,18 @@ Spring Security OAuth provides its own JWT support via `spring-security-jwt`.
 
 Spring Security relies on Nimbus for its JWT support.
 
+=== Examples Matrix
+
+Both Spring Security and Spring Security OAuth2 have examples for how to configure Client:
+
+[options="header"]
+|===
+| Use case | Spring Security | Spring Security OAuth
+
+| WebClient | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2webclient[Sample] | 
+| RestTemplate |  | 
+|===
+
 [[oauth2-login]]
 == Login
 
