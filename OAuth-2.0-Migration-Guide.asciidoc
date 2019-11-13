@@ -1,3 +1,5 @@
+NOTE: This document is a work in progress. Check back regularly for updates.
+
 This document contains guidance for moving from Spring Security OAuth 2.x to Spring Security 5.2.x.
 
 Because the two approaches are as different as they are, this document will tend to cover patterns more than precise search-and-replace steps.
