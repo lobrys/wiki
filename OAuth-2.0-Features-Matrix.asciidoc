@@ -13,7 +13,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 |===
 |
 | https://projects.spring.io/spring-security/[Spring Security^] (5.2+)
-| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.3+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
@@ -50,7 +50,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 |===
 |
 | https://projects.spring.io/spring-security/[Spring Security^] (5.2+)
-| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.3+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
@@ -88,7 +88,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
   https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2login[documentation^]. Several other OAuth 2.0 samples are available in the same repo.
   We will continue to provide samples and documentation as we build out new features.
 *Are there new features being implemented in Spring Security OAuth 2.3+?*::
-  We will provide bug/security fixes and consider adding minor features but we will not be adding major features.
+  We will provide bug/security fixes and consider adding minor enhancements.
   Our plan going forward is to build all the features currently in Spring Security OAuth into Spring Security 5.x.
   After Spring Security has reached feature parity with Spring Security OAuth,
   we will continue to support bugs and security fixes for at least one year.
