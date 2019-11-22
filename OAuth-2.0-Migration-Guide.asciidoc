@@ -55,8 +55,11 @@ Both Spring Security and Spring Security OAuth2 have examples for how to configu
 |===
 | Use case | Spring Security | Spring Security OAuth
 
-| WebClient | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2webclient[Sample] | 
-| RestTemplate |  | 
+| Authorization Code | https://github.com/jgrandja/spring-security-oauth-5-2-migrate[Sample] | https://github.com/jgrandja/spring-security-oauth-2-4-migrate[Sample]
+| Refresh Token | https://github.com/jgrandja/spring-security-oauth-5-2-migrate[Sample] | https://github.com/jgrandja/spring-security-oauth-2-4-migrate[Sample]
+| Client Credentials | https://github.com/jgrandja/spring-security-oauth-5-2-migrate[Sample] | https://github.com/jgrandja/spring-security-oauth-2-4-migrate[Sample]
+| Resource Owner Password Credentials | https://github.com/jgrandja/spring-security-oauth-5-2-migrate[Sample] | https://github.com/jgrandja/spring-security-oauth-2-4-migrate[Sample]
+
 |===
 
 [[oauth2-login]]
