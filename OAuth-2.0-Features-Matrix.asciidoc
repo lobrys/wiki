@@ -1,5 +1,5 @@
-The following matrix outlines all the OAuth 2.0 features implemented by the various projects within the Spring portfolio.
-The matrix may be used to determine which project(s) to use based on your OAuth 2.0 requirements.
+The following matrix outlines all the OAuth 2.0 Client and Resource Server features implemented by the various projects within the Spring portfolio.
+The matrix may be used to determine which project(s) to use based on your OAuth 2.0 Client and Resource Server requirements.
 
 NOTE: Spring Security 5.0 introduced new Client support for the OAuth 2.0 Authorization Framework and OpenID Connect 1.0. Spring Security 5.1 introduced new Resource Server support as well as additional Client support for different grant types. Spring Security 5.2 continued this pattern, providing more support for Resource Server and Client. This matrix will be kept up-to-date as we complete new features.
 
@@ -79,6 +79,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
   As of Spring Security 5.2, there is built-in support for OAuth 2.0 Login, Client, and Resource Server, with a breakdown visible in the above matrix.
   We plan to continue to add features for Client and Resource Server pertaining to the https://oauth.net/2/[OAuth 2.0 Core and Extensions^], https://openid.net/connect/[OpenID Connect 1.0^] and
   https://jose.readthedocs.io/en/latest/[Javascript Object Signing and Encryption (JOSE)^] specifications.
+  We are no longer planning on adding Authorization Server support to Spring Security.
 *Where can I find out more information on which OAuth 2.0 and OpenID Connect 1.0 features will be implemented in Spring Security 5?*::
   You may track upcoming features in the https://github.com/spring-projects/spring-security/issues[Spring Security GitHub^] repo using the
   https://github.com/spring-projects/spring-security/labels/in%3A%20oauth2[in: oauth2^] label.
