@@ -1,0 +1,91 @@
+= Spring Security Release Schedule Guidelines
+
+* These are guidelines around when Spring Security will be released.
+We favor pragmatism to sticking strictly to the rules.
+* Spring Security releases the first Wednesday of the month.
+If a release happens over a holiday, then we will do it the following Wed.
+* We have two GA releases a year labeled GA-1 and GA-2
+* If an RC2 is necessary, we will release RC2 two weeks after RC1
+* Regularly scheduled patch releases occur on even months
+* There may be circumstances (i.e fixing a CVE) where an extra release is performed.
+
+[cols="5*^", options="header"]
+|===
+| #
+| Month
+| [blue]*GA-1*
+| [red]*GA-2*
+| Patch
+
+| 01
+| Jan
+| [blue]*M2*
+|
+|
+
+| 02
+| Feb
+| [blue]*RC1*
+|
+| X
+
+| 03
+| March
+| [blue]*GA*
+|
+|
+
+| 04
+| April
+|
+|
+| X
+
+| 05
+| May
+|
+| [red]*M1*
+|
+
+| 06
+| June
+|
+|
+| X
+
+| 07
+| July
+|
+| [red]*M2*
+|
+
+| 08
+| Aug
+|
+| [red]*RC1*
+| X
+
+| 09
+| Sept
+|
+| [red]*GA*
+|
+
+| 10
+| Oct
+|
+|
+| X
+
+| 11
+| Nov
+| [blue]*M1*
+|
+|
+
+| 12
+| Dec
+|
+|
+| X
+|===
