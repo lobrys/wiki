@@ -85,9 +85,12 @@ wget https://github.com/spring-io/github-release-notes-generator/releases/downlo
 java -jar github-release-notes-generator.jar \
     --releasenotes.github.organization=spring-projects \
     --releasenotes.github.repository=spring-security \
+    --spring.config.location=scripts/release/release-notes-sections.yml \
     $MILESTONE release-notes
 ```
-Note that `$MILESTONE` is something like `5.2.1` or `5.3.0.M1`. This will create a file on your filesystem called `release-notes`.
+Note 1: `$MILESTONE` is something like `5.2.1` or `5.3.0.M1`.  
+Note 2: The location `scripts/release/release-notes-sections.yml` is relative to the `spring-security` repo.  
+Note 3: This will create a file on your filesystem called `release-notes`.  
 
 - Copy the release notes to your clipboard (your mileage may vary with the following command)
 ```
