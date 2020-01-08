@@ -23,6 +23,10 @@
 
 #### 1. Update dependencies
 
+If you are on master use 1.b, otherwise use 1.a
+
+#### 1.a Updating Manually
+
 - Dependencies are declared in `gradle/dependency-management.gradle`
 - Update Spring Framework and Spring Data at a minimum
 - Then find dependencies that need updating by running the `update-dependencies.sh` script:
@@ -30,6 +34,18 @@
 ./scripts/update-dependencies.sh
 ```
 _Prerequisites: The `build` directory has to exist to store the file `build/updates.txt`. This directory gets created when a new build is run, but is not present on a fresh git clone._
+
+#### 1.b Lock Dependencies
+
+Master is setup to use Gradle [dependency locking](https://docs.gradle.org/current/userguide/dependency_locking.html) and version ranges so builds automatically take advantage of the latest dependencies. In order to ensure releases are reproducible, we must lock the dependencies before a release.
+
+To lock the dependencies execute:
+
+```
+./gradlew writeLocks --write-locks
+```
+
+This writes out all the resolved versions. Run the build. If it passes, commit the changes.
 
 #### 2. Update release version
  
@@ -68,6 +84,7 @@ git push origin 5.2.0.RC1
 #### 7. Update to next development version
  
 - Update release version to next `BUILD-SNAPSHOT` version and then push
+- If dependency locks (1.b) were used, revert the commit that included the lock files so that the build uses the latest versions again.
 
 #### 8. Update version on project page
 
