@@ -71,6 +71,11 @@ This writes out all the resolved versions. Run the build. If it passes, commit t
 spring-security-release 5.2.0.RC1 is out!
 ```
 
+- Announce via Slack on [#spring-release](https://pivotal.slack.com/messages/spring-release), including the keyword `spring-security-announcing` in the message. Something like:
+```
+spring-security-announcing 5.3.0.RELEASE is available.
+```
+
 ### 6. Tag the release
 
 - Tag the release and then push the tag
