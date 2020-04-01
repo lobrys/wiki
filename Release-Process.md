@@ -43,7 +43,9 @@ To lock the dependencies execute:
 ./gradlew writeLocks --write-locks
 ```
 
-This writes out all the resolved versions. Run the build. If it passes, commit the changes.
+This writes out all the resolved versions. Run the build and if it passes, commit the changes.
+
+**NOTE:** An issue may occur where a resolved version in a lock file includes a `BUILD-SNAPSHOT` version. For these scenarios, you can force to resolve the release version by appending the argument `-PforceMavenRepositories=release` to the above command.
 
 ### 2. Update release version
  
@@ -86,8 +88,8 @@ git push origin 5.2.0.RC1
 
 ### 7. Update to next development version
  
+- If dependency locks (1.b) was used, revert the commit that included the lock files so that the build uses the latest versions again.
 - Update release version to next `BUILD-SNAPSHOT` version and then push
-- If dependency locks (1.b) were used, revert the commit that included the lock files so that the build uses the latest versions again.
 
 ### 8. Update version on project page
 
