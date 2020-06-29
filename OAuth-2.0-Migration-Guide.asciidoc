@@ -15,7 +15,7 @@ https://github.com/spring-projects/spring-security[Spring Security] takes a slig
 
 ==== Simplified Enablement
 
-Spring Security OAuth's Client support for the Authorization Code flow is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-single-sign-on[adding the `@EnableOAuth2Client` annotation].
+Spring Security OAuth's Client support for the Authorization Code flow is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#boot-features-security-oauth2-single-sign-on[adding the `@EnableOAuth2Client` annotation].
 For other flows, an `OAuth2ClientContext` instance needs to be constructed and exposed.
 
 Spring Security's OAuth 2.0 Client support is enabled via the Spring Security `oauth2Client` DSL method.
@@ -75,7 +75,7 @@ NOTE: Spring Security refers to this feature as OAuth 2.0 Login while Spring Sec
 
 ==== Simplified Enablement
 
-Spring Security OAuth's SSO support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-single-sign-on[adding the `@EnableOAuth2Sso` annotation].
+Spring Security OAuth's SSO support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#boot-features-security-oauth2-single-sign-on[adding the `@EnableOAuth2Sso` annotation].
 
 Spring Security's OAuth 2.0 Login support is enabled via the Spring Security `oauth2Login()` DSL method.
 
@@ -88,7 +88,7 @@ https://github.com/spring-projects/spring-security[Spring Security] takes a slig
 
 ==== Simplified Enablement
 
-Spring Security OAuth's Resource Server support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-resource-server[adding the `@EnableResourceServer` annotation].
+Spring Security OAuth's Resource Server support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#boot-features-security-oauth2-resource-server[adding the `@EnableResourceServer` annotation].
 
 Spring Security's Resource Server support is enabled via the Spring Security `oauth2ResourceServer` DSL method.
 
@@ -100,7 +100,7 @@ Spring Security exposes the same functionality https://github.com/spring-project
 
 ==== Simplified Enablement
 
-Spring Security OAuth's Resource Server support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#oauth2-boot-resource-server-minimal[adding the `@EnableResourceServer` annotation].
+Spring Security OAuth's Resource Server support is enabled by https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#oauth2-boot-resource-server-minimal[adding the `@EnableResourceServer` annotation].
 
 Spring Security's Resource Server support is enabled via the Spring Security DSL.
 
@@ -113,7 +113,7 @@ Spring Security indicates that all authorization rules be configured via one or 
 ==== Simplified SpEL
 
 Spring Security OAuth supports a custom SpEL variable called `oauth2`. 
-To authorize requests or methods based on scope, you write https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#oauth2-boot-resource-server-authorization[an expression like `access("#oauth2.hasScope('scope')")`].
+To authorize requests or methods based on scope, you write https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#oauth2-boot-resource-server-authorization[an expression like `access("#oauth2.hasScope('scope')")`].
 
 Spring Security converts scopes that follow the granted authority naming convention.
 To authorize requests or methods based on scope, you write https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#webflux-oauth2resourceserver-jwt-authorization[an expression like `hasAuthority("SCOPE_scope")`].
@@ -127,11 +127,11 @@ Both Spring Security and Spring Security OAuth2 have examples for how to configu
 | Use case | Spring Security | Spring Security OAuth
 
 | JWT + JWK | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver[Sample] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-resource-jwt[Sample]
-| JWT + Key | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-static[Sample] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#oauth2-boot-resource-server-jwt-single-key[Doc]
+| JWT + Key | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-static[Sample] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#oauth2-boot-resource-server-jwt-single-key[Doc]
 | Opaque Token | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-opaque[Sample] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-resource[Sample]
 | w/ Actuator | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#multiple-httpsecurity[Doc] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-actuator[Sample]
 | Audience Validation | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2resourceserver-jwt-validation-custom[Doc] |
-| Authorizing Requests | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2resourceserver-jwt-authorization[Doc] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/#oauth2-boot-resource-server-authorization[Doc]
+| Authorizing Requests | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2resourceserver-jwt-authorization[Doc] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#oauth2-boot-resource-server-authorization[Doc]
 |===
 
 === Unported Features
