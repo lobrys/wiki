@@ -90,7 +90,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | [red]#*_Protocol Endpoints_*# 4+|
 | Authorization Endpoint | &#10004; | &#10004; | |
 | Token Endpoint | &#10004; | &#10004; | |
-| User Approval Endpoint | | &#10004; | |
+| User Consent Endpoint | | &#10004; | |
 | Introspection Endpoint | | &#10004; | |
 
 | [red]#*_Access Token Formats_*# 4+|
@@ -108,13 +108,14 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | HTTP POST | | &#10004; | |
 
 | [red]#*_Client Registration Storage Management_*# 4+|
+| In-Memory | &#10004; | &#10004; | |
 | JDBC | | &#10004; | |
 
 | [red]#*_Authorization Code Storage Management_*# 4+|
 | In-Memory | &#10004; | &#10004; | |
 | JDBC | | &#10004; | |
 
-| [red]#*_User Approval Storage Management_*# 4+|
+| [red]#*_User Consent Storage Management_*# 4+|
 | In-Memory | | &#10004; | |
 | JDBC | | &#10004; | |
 |===
