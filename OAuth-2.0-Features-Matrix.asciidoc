@@ -76,42 +76,42 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 |===
 |
 | https://github.com/spring-projects-experimental/spring-authorization-server/[Spring Authorization Server^] (0.0.1)
-| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.2+)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.3+)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
 | [red]#*_Authorization Grants_*# 4+|
-| Authorization Code | | &#10004; | |
+| Authorization Code | &#10004; | &#10004; | |
 | Implicit | | &#10004; | |
 | Resource Owner Password Credentials | | &#10004; | |
-| Client Credentials | | &#10004; | |
+| Client Credentials | &#10004; | &#10004; | |
 | Refresh Token | | &#10004; | |
 
 | [red]#*_Protocol Endpoints_*# 4+|
-| Authorization Endpoint | | &#10004; | |
-| Token Endpoint | | &#10004; | |
+| Authorization Endpoint | &#10004; | &#10004; | |
+| Token Endpoint | &#10004; | &#10004; | |
 | User Approval Endpoint | | &#10004; | |
 | Introspection Endpoint | | &#10004; | |
 
 | [red]#*_Access Token Formats_*# 4+|
 | Opaque | | &#10004; | |
 | JSON Web Signature (MAC) | | &#10004; | |
-| JSON Web Signature (RSA) | | &#10004; | |
+| JSON Web Signature (RSA) | &#10004; | &#10004; | |
 
 | [red]#*_Access Token Storage Management_*# 4+|
-| In-Memory | | &#10004; | |
+| In-Memory | &#10004; | &#10004; | |
 | JDBC | | &#10004; | |
 | Redis | | &#10004; | |
 
 | [red]#*_Client Authentication Methods_*# 4+|
-| HTTP Basic | | &#10004; | |
+| HTTP Basic | &#10004; | &#10004; | |
 | HTTP POST | | &#10004; | |
 
 | [red]#*_Client Registration Storage Management_*# 4+|
 | JDBC | | &#10004; | |
 
 | [red]#*_Authorization Code Storage Management_*# 4+|
-| In-Memory | | &#10004; | |
+| In-Memory | &#10004; | &#10004; | |
 | JDBC | | &#10004; | |
 
 | [red]#*_User Approval Storage Management_*# 4+|
