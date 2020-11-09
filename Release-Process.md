@@ -49,7 +49,7 @@ This writes out all the resolved versions. Run the build and if it passes, commi
 
 ### 2. Update release version
  
-- Update the version number in `gradle.properties` for the release, for example, `5.1.0.M1`, `5.1.0.RC1`, `5.1.0.RELEASE` 
+- Update the version number in `gradle.properties` for the release, for example, `5.4.0-M1`, `5.4.0-RC1`, `5.4.0` 
 
 ### 3. Build Locally
 
@@ -63,33 +63,28 @@ This writes out all the resolved versions. Run the build and if it passes, commi
 - Push the release commit and [Jenkins](https://jenkins.spring.io/job/spring-security/) will build and deploy the artifacts
 - If you are pushing to Maven Central, then you can get notified when it's uploaded by running the following:
 ```bash
-./scripts/release/wait-for-done.sh 5.2.0.RELEASE
+./scripts/release/wait-for-done.sh 5.4.0
 ```
 
 ### 5. Announce the release on Slack
 
-- Announce via Slack on [#spring-security](https://pivotal.slack.com/messages/spring-security), including the keyword `spring-security-release` in the message. Something like:
-```
-spring-security-release 5.2.0.RC1 is out!
-```
-
 - Announce via Slack on [#spring-release](https://pivotal.slack.com/messages/spring-release), including the keyword `spring-security-announcing` in the message. Something like:
 ```
-spring-security-announcing 5.3.0.RELEASE is available.
+spring-security-announcing 5.4.0 is available.
 ```
 
 ### 6. Tag the release
 
 - Tag the release and then push the tag
 ```
-git tag 5.2.0.RC1
-git push origin 5.2.0.RC1
+git tag 5.4.0-RC1
+git push origin 5.4.0-RC1
 ```
 
 ### 7. Update to next development version
  
 - If dependency locks (1.b) was used, revert the commit that included the lock files so that the build uses the latest versions again.
-- Update release version to next `BUILD-SNAPSHOT` version and then push
+- Update release version to next `SNAPSHOT` version and then push
 
 ### 8. Update version on project page
 
@@ -110,7 +105,7 @@ java -jar github-release-notes-generator.jar \
     --spring.config.location=scripts/release/release-notes-sections.yml \
     $MILESTONE release-notes
 ```
-Note 1: `$MILESTONE` is something like `5.2.1` or `5.3.0.M1`.  
+Note 1: `$MILESTONE` is something like `5.2.1` or `5.3.0-M1`.  
 Note 2: The location `scripts/release/release-notes-sections.yml` is relative to the `spring-security` repo.  
 Note 3: This will create a file on your filesystem called `release-notes`.  
 
@@ -132,4 +127,3 @@ create a new milestone for the next release version
 
 - Create a [Blog](https://spring.io/admin/blog)
 - Tweet from [@SpringSecurity](https://twitter.com/springsecurity)
-- Send email to spring-developer@pivotal.io
