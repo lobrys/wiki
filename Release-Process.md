@@ -4,6 +4,7 @@
 
 ## Process Overview
 
+0. [Check All Issues Are Close](#0-check-all-issues-are-closed)
 1. [Update dependencies](#1-update-dependencies)
 2. [Update release version](#2-update-release-version)
 3. [Build Locally](#3-build-locally)
@@ -18,6 +19,10 @@
 
 
 ## Detailed Steps
+
+### 0. Check All Issues Are Closed
+
+Check that all issues are closed for the milestone https://github.com/spring-projects/spring-security/milestones
 
 ### 1. Update dependencies
 
