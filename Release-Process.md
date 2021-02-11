@@ -40,12 +40,12 @@ Master is setup to use Gradle [dependency locking](https://docs.gradle.org/curre
 To lock the dependencies execute:
 
 ```
-./gradlew writeLocks --write-locks
+./gradlew writeLocks --write-locks -PforceMavenRepositories=release
 ```
 
 This writes out all the resolved versions. Run the build and if it passes, commit the changes.
 
-**NOTE:** An issue may occur where a resolved version in a lock file includes a `BUILD-SNAPSHOT` version. For these scenarios, you can force to resolve the release version by appending the argument `-PforceMavenRepositories=release` to the above command.
+**NOTE:** An issue may occur where a resolved version in a lock file includes a `BUILD-SNAPSHOT` version. To prevent that we force to resolve the release version by appending the argument `-PforceMavenRepositories=release` to the above command.
 
 ### 2. Update release version
  
