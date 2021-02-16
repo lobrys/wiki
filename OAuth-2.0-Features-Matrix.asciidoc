@@ -1,5 +1,5 @@
-The following matrix outlines all the OAuth 2.0 Client and Resource Server features implemented by the various projects within the Spring portfolio.
-The matrix may be used to determine which project(s) to use based on your OAuth 2.0 Client and Resource Server requirements.
+The following matrix outlines all the OAuth 2.0 Client, Resource Server and Authorization Server features implemented by the various projects within the Spring portfolio.
+The matrix may be used to determine which project(s) to use based on your OAuth 2.0 Client, Resource Server and Authorization Server requirements.
 
 NOTE: Spring Security 5.0 introduced new Client support for the OAuth 2.0 Authorization Framework and OpenID Connect 1.0. Spring Security 5.1 introduced new Resource Server support as well as additional Client support for different grant types. Spring Security 5.2 continued this pattern, providing more support for Resource Server and Client. This matrix will be kept up-to-date as we complete new features.
 
@@ -12,14 +12,14 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://projects.spring.io/spring-security/[Spring Security^] (5.2+)
-| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.3+)
+| https://projects.spring.io/spring-security/[Spring Security^] (5.4+)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.5)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
 | [red]#*_Authorization Grants_*# 4+|
 | Authorization Code | &#10004; | &#10004; | |
-| Implicit | &#10004; | &#10004; | |
+| Implicit | | &#10004; | |
 | Resource Owner Password Credentials | &#10004; | &#10004; | |
 | Client Credentials | &#10004; | &#10004; | |
 | Refresh Token | &#10004; | &#10004; | |
@@ -49,8 +49,8 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://projects.spring.io/spring-security/[Spring Security^] (5.2+)
-| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.3+)
+| https://projects.spring.io/spring-security/[Spring Security^] (5.4+)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.5)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
@@ -75,27 +75,27 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://github.com/spring-projects-experimental/spring-authorization-server/[Spring Authorization Server^] (0.0.1)
-| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.3+)
+| https://github.com/spring-projects-experimental/spring-authorization-server/[Spring Authorization Server^] (0.1.0)
+| https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.5)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
 
 | [red]#*_Authorization Grants_*# 4+|
 | Authorization Code | &#10004; | &#10004; | |
-| Implicit | | &#10004; | |
-| Resource Owner Password Credentials | | &#10004; | |
+| Implicit | Not implemented *^[1]^* | &#10004; | |
+| Resource Owner Password Credentials | Not implemented *^[1]^* | &#10004; | |
 | Client Credentials | &#10004; | &#10004; | |
-| Refresh Token | | &#10004; | |
+| Refresh Token | &#10004; | &#10004; | |
 
 | [red]#*_Protocol Endpoints_*# 4+|
 | Authorization Endpoint | &#10004; | &#10004; | |
 | Token Endpoint | &#10004; | &#10004; | |
-| User Consent Endpoint | | &#10004; | |
+| User Consent Endpoint | &#10004; | &#10004; | |
 | Introspection Endpoint | | &#10004; | |
 
 | [red]#*_Access Token Formats_*# 4+|
 | Opaque | | &#10004; | |
-| JSON Web Signature (MAC) | | &#10004; | |
+| JSON Web Signature (MAC) | &#10004; | &#10004; | |
 | JSON Web Signature (RSA) | &#10004; | &#10004; | |
 
 | [red]#*_Access Token Storage Management_*# 4+|
@@ -105,7 +105,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 
 | [red]#*_Client Authentication Methods_*# 4+|
 | HTTP Basic | &#10004; | &#10004; | |
-| HTTP POST | | &#10004; | |
+| HTTP POST | &#10004; | &#10004; | |
 
 | [red]#*_Client Registration Storage Management_*# 4+|
 | In-Memory | &#10004; | &#10004; | |
@@ -116,9 +116,11 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | JDBC | | &#10004; | |
 
 | [red]#*_User Consent Storage Management_*# 4+|
-| In-Memory | | &#10004; | |
+| In-Memory | &#10004; | &#10004; | |
 | JDBC | | &#10004; | |
 |===
+
+1. The Implicit grant and Resource Owner Password Credentials grant has been omitted (deprecated) from the https://tools.ietf.org/html/draft-ietf-oauth-v2-1-01[OAuth 2.1 Authorization Framework].
 
 [[frequently-asked-questions]]
 = Frequently Asked Questions
