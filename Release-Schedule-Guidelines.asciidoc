@@ -2,8 +2,8 @@
 
 * These are guidelines around when Spring Security will be released.
 We favor pragmatism to sticking strictly to the rules.
-* Spring Security releases the second Friday of the month.
-If a release happens over a holiday, then we will do it the following Monday.
+* Spring Security releases the third Monday of the month.
+If a release happens over a holiday, then we will do it on Tuesday.
 * We have two GA releases a year labeled GA-1 and GA-2
 * If an RC2 is necessary, we will release RC2 two weeks after RC1
 * Regularly scheduled patch releases occur every other month
