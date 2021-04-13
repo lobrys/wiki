@@ -21,71 +21,71 @@ If a release happens over a holiday, then we will do it on Tuesday.
 | Jan
 | [blue]*M1*
 |
-| X
+|
 
 | 02
 | Feb
 | [blue]*M2*
 |
-|
+| X
 
 | 03
 | March
 | [blue]*M3*
 |
-| X
+|
 
 | 04
 | April
 | [blue]*RC1*
 |
-|
+| X
 
 | 05
 | May
 | [blue]*GA*
 |
-| X
+|
 
 | 06
 | June
 |
 |
-|
+| X
 
 | 07
 | July
 |
 | [red]*M1*
-| X
+|
 
 | 08
 | Aug
 |
 | [red]*M2*
-|
+| X
 
 | 09
 | Sept
 |
 | [red]*M3*
-| X
+|
 
 | 10
 | Oct
 |
 |[red]*RC1*
-|
+| X
 
 | 11
 | Nov
 |
 | [red]*GA*
-| X
+|
 
 | 12
 | Dec
 |
 |
-|
+| X
 |===
