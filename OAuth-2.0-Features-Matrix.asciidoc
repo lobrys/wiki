@@ -75,7 +75,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://github.com/spring-projects-experimental/spring-authorization-server/[Spring Authorization Server^] (0.1.0)
+| https://github.com/spring-projects-experimental/spring-authorization-server/[Spring Authorization Server^] (0.1.1)
 | https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.5)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
@@ -91,7 +91,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 | Authorization Endpoint | &#10004; | &#10004; | |
 | Token Endpoint | &#10004; | &#10004; | |
 | User Consent Endpoint | &#10004; | &#10004; | |
-| Introspection Endpoint | | &#10004; | |
+| Introspection Endpoint | &#10004; | &#10004; | |
 
 | [red]#*_Access Token Formats_*# 4+|
 | Opaque | | &#10004; | |
