@@ -26,7 +26,7 @@ Check that all issues are closed for the milestone https://github.com/spring-pro
 
 ### 1. Update dependencies
 
-If you are on master use 1.b, otherwise use 1.a
+If you are on 5.2.x use 1.a, if you are on 5.3.x or 5.4.x use 1.b
 
 ### 1.a Updating Manually
 
