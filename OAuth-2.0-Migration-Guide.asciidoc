@@ -126,9 +126,9 @@ Both Spring Security and Spring Security OAuth2 have examples for how to configu
 |===
 | Use case | Spring Security | Spring Security OAuth
 
-| JWT + JWK | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver[Sample] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-resource-jwt[Sample]
-| JWT + Key | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-static[Sample] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#oauth2-boot-resource-server-jwt-single-key[Doc]
-| Opaque Token | https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-opaque[Sample] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-resource[Sample]
+| JWT + JWK | https://github.com/spring-projects/spring-security-samples/tree/main/servlet/spring-boot/java/oauth2/resource-server/hello-security[Sample] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-resource-jwt[Sample]
+| JWT + Key | https://github.com/spring-projects/spring-security-samples/tree/main/servlet/spring-boot/java/oauth2/resource-server/static[Sample] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#oauth2-boot-resource-server-jwt-single-key[Doc]
+| Opaque Token | https://github.com/spring-projects/spring-security-samples/tree/main/servlet/spring-boot/java/oauth2/resource-server/opaque[Sample] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-resource[Sample]
 | w/ Actuator | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#multiple-httpsecurity[Doc] | https://github.com/spring-projects/spring-security-oauth2-boot/tree/master/samples/spring-boot-sample-secure-oauth2-actuator[Sample]
 | Audience Validation | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2resourceserver-jwt-validation-custom[Doc] |
 | Authorizing Requests | https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2resourceserver-jwt-authorization[Doc] | https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/#oauth2-boot-resource-server-authorization[Doc]
