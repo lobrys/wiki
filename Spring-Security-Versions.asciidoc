@@ -1,0 +1,71 @@
+# Spring Security Support Policy
+
+Spring Security follows the https://tanzu.vmware.com/support/oss[VMWare Tanzu OSS Support Policy] for critical bugs and security issues.
+
+Major versions will be supported for at least 3 years from the release date (but you must run a supported minor version).
+
+Minor versions will be supported for at least 12 months.
+
+Commercial support is also available from VMware which offers an extended support period.
+
+All Spring Security releases are publicly available from Maven Central and https://repo.spring.io. We do not have a private repository reserved only for paying customers.
+
+### End of Life
+
+Spring Security releases are marked as "end-of-life" when they are no longer supported or released in any form. If you are running an EOL version, you should upgrade as soon as possible.
+
+Spring Security releases are marked end-of-life in one of two ways:
+
+* If they are the last minor to align with a given Spring Framework minor, then they are marked as end-of-life when that Spring Framework minor is marked end-of-life. 
+* Otherwise, they are marked as end-of-life when their corresponding Spring Boot minor is marked end-of-life.
+
+Please note that a version can be out of support before it is end-of-life. During this time you should only expect releases for critical bugs or security issues.
+
+## Releases
+
+### Release Schedule
+Spring Security uses the following https://github.com/spring-projects/spring-security/wiki/Release-Schedule-Guidelines[release schedule].
+
+### Released Versions
+The following releases are actively maintained:
+
+[cols="4*^",options="header"]
+|===
+| Version 
+| Released
+| OSS Support Until
+| Expected End-of-Life
+
+| 5.5.x | May 2021 | May 2022 | February 2023
+
+| 5.4.x | October 2020 | October 2021 | July 2022
+
+| 5.3.x | May 2020 | May 2021 | December 2021
+
+| 5.2.x | September 2019 | September 2020 | December 2021
+|===
+
+The following releases are end-of-life:
+
+[cols="4*^", options="header"]
+|===
+| Version 
+| Released
+| End of Life
+| Notes
+
+| 5.1.x
+| September 2018
+| October 2020
+| 
+
+| 5.0.x
+| September 2017
+| October 2020
+|
+
+| 4.2.x
+| November 2016
+| October 2020
+| Last in the 4.x line.
+|===
