@@ -1,1 +1,1 @@
-This document has moved, see [CONTRIBUTING](https://github.com/SpringSource/spring-security/blob/master/CONTRIBUTING.md)
+This document has moved, see [CONTRIBUTING](https://github.com/spring-projects/spring-security/blob/main/CONTRIBUTING.adoc)
