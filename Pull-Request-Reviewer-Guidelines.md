@@ -18,10 +18,12 @@ While it is totally possible to review a PR using only the GitHub's UI, sometime
 ### Checking out the PR locally using Git
 
 Checkout the PR locally:
+
 `$ git fetch https://github.com/spring-projects/spring-security pull/xxxx/head:pull/xxxx`  
 `$ git checkout pull/xxxx`
 
 Update a local copy of the PR:
+
 `$ git checkout pull/xxxx`
 `$ git pull https://github.com/spring-projects/spring-security pull/xxxx/head`
 
