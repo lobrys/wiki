@@ -75,7 +75,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 [cols="<40,^15,^15,^15,^15",options="header"]
 |===
 |
-| https://github.com/spring-projects-experimental/spring-authorization-server/[Spring Authorization Server^] (0.1.1)
+| https://github.com/spring-projects/spring-authorization-server/[Spring Authorization Server^] (0.2.0)
 | https://projects.spring.io/spring-security-oauth/[Spring Security OAuth^] (2.5)
 | https://cloud.spring.io/spring-cloud-security/[Spring Cloud Security^] (1.2+)
 | https://projects.spring.io/spring-boot/[Spring Boot OAuth2^] (1.5.x)
@@ -100,7 +100,7 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 
 | [red]#*_Access Token Storage Management_*# 4+|
 | In-Memory | &#10004; | &#10004; | |
-| JDBC | | &#10004; | |
+| JDBC | &#10004; | &#10004; | |
 | Redis | | &#10004; | |
 
 | [red]#*_Client Authentication Methods_*# 4+|
@@ -109,15 +109,15 @@ For additional information, please see the <<frequently-asked-questions,Frequent
 
 | [red]#*_Client Registration Storage Management_*# 4+|
 | In-Memory | &#10004; | &#10004; | |
-| JDBC | | &#10004; | |
+| JDBC | &#10004; | &#10004; | |
 
 | [red]#*_Authorization Code Storage Management_*# 4+|
 | In-Memory | &#10004; | &#10004; | |
-| JDBC | | &#10004; | |
+| JDBC | &#10004; | &#10004; | |
 
 | [red]#*_User Consent Storage Management_*# 4+|
 | In-Memory | &#10004; | &#10004; | |
-| JDBC | | &#10004; | |
+| JDBC | &#10004; | &#10004; | |
 |===
 
 1. The Implicit grant and Resource Owner Password Credentials grant has been omitted (deprecated) from the https://tools.ietf.org/html/draft-ietf-oauth-v2-1-01[OAuth 2.1 Authorization Framework].
