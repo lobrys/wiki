@@ -42,7 +42,7 @@ Performing a full code review also helps the submitters by having less rounds of
 
 ### Polish commits
 
-Consider just adding a polish commit instead of having the submitter do everything.
+Consider just adding a polish commit instead of having the submitter do everything. To do this you can go to the base branch, cherry-pick the commit from the PR, and add another commit that polishes it. After that, just push the commits to the base branch and the PR will be closed.
 
 ### Consider smaller PRs
 
