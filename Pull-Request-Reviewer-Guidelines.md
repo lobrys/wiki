@@ -31,9 +31,19 @@ Update a local copy of the PR:
 
 Where `xxxx` is the number of the PR.
 
-# Dedicate your time
+# Tips to improve the review process
 
-When performing a code review, try to dedicate the corresponding time to the PR's size. For example, if a PR is proposing a new API with thousands new lines, we should be aware that this review is going to take a while and we have to prepare ourselfs to try to review it in its entirety.
+### Dedicate your time
+
+When performing a code review, try to dedicate the corresponding time to the PR's size. For example, if a PR is proposing a new API with thousands of new lines, we should be aware that this review is going to take a while and we have to prepare ourselfs to try to review it in its entirety.
 If you have to stop the review and come back after a while, almost always we can not remember where we were and we have to start over again.
 
 Performing a full code review also helps the submitters by having less rounds of working on the feedbacks.
+
+### Polish commits
+
+Consider just adding a polish commit instead of having the submitter do everything.
+
+### Consider smaller PRs
+
+Most of the times a feature can be split into multiple different PRs, each one adding a new piece, which together may become a feature. Having smaller PRs helps keep the focus when reviewing it.
