@@ -40,8 +40,10 @@ Both Spring Security and Spring Security SAML Extensions have examples for how t
 | Use case | Spring Security | Spring Security SAML Extension
 
 | Login & Logout | https://github.com/spring-projects/spring-security-samples/tree/main/servlet/spring-boot/java/saml2/login[Sample] |
-https://github.com/spring-projects/spring-security-saml/tree/main/sample[Sample]
+https://github.com/jzheaux/spring-security-saml-migrate/tree/main/login-logout[Sample]
 |===
+
+You can also see a showcase example in https://github.com/spring-projects/spring-security-saml/tree/main/sample[Spring Security SAML Extension]'s GitHub project.
 
 [[saml2-metadata]]
 == Metadata
