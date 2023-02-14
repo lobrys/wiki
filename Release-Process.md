@@ -1,1 +1,1 @@
-**Please note:** This page has been replaced by [RELEASE.adoc](https://github.com/spring-projects/spring-security/blob/main/README.adoc).
+**Please note:** This page has been replaced by [RELEASE.adoc](https://github.com/spring-projects/spring-security/blob/main/RELEASE.adoc).
