@@ -1,0 +1,27 @@
+= Dependabot Automations
+
+Spring Security has some automation around Dependabot that aims to reduce the amount of manual work needed to keep the PRs merged and the branches in sync as well as keeping the `dependabot.yml` file updated. This document outlines what each of those automations do.
+
+== Update `dependabot.yml` (https://github.com/spring-projects/spring-security/blob/main/.github/workflows/update-dependabot.yml[workflow file])
+
+This workflow runs every day and makes sure that the `dependabot.yml` file is updated whenever the https://spring.io/projects/spring-security#support[supported branches] or the https://github.com/spring-projects/spring-security/blob/main/.github/dependabot.template.yml[`dependabot.template.yml`] file changes.
+
+More details on the https://github.com/spring-io/spring-security-release-tools/tree/main/.github/actions/generate-dependabot-yml[action's repository].
+
+== Merge Dependabot PR (https://github.com/spring-projects/spring-security/blob/main/.github/workflows/merge-dependabot-pr.yml[workflow file])
+
+This workflow runs when a PR is opened by the `dependabot[bot]` user and does:
+
+- Assign a PR to a specific milestone based on the target branch of its PR
+- Trigger PR's https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request[auto merge]
+
+[[trigger-auto-merge-forward]]
+== Trigger Dependabot Auto Merge Forward (https://github.com/spring-projects/spring-security/blob/main/.github/workflows/trigger-dependabot-auto-merge-forward.yml[workflow file])
+
+This workflow runs when a new commit from the `dependabot[bot]` author is pushed into one of the supported branches. Its sole responsibility is to invoke the <<auto-merge-forward,Auto Merge Forward Dependabot Commits>> workflow.
+
+[[auto-merge-forward]]
+== Auto Merge Forward Dependabot Commits (https://github.com/spring-projects/spring-security/blob/main/.github/workflows/dependabot-auto-merge-forward.yml[workflow file])
+
+This workflow is <<trigger-auto-merge-forward,triggered when a new commit>> from `dependabot[bot]` is pushed to any of the supported branches.
+It first retrieves the currently supported branches and pass them to the https://github.com/spring-io/spring-security-release-tools/tree/main/.github/actions/auto-merge-forward[Auto Merge Forward Action] invocation. The action takes care of merging the commits that are not in sync between the branches. More details on the https://github.com/spring-io/spring-security-release-tools/tree/main/.github/actions/auto-merge-forward[action's repository].
