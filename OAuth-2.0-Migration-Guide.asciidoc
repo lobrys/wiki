@@ -96,7 +96,7 @@ Spring Security's Resource Server support is enabled via the Spring Security `oa
 
 Spring Security OAuth exposes https://github.com/spring-projects/spring-security-oauth/blob/master/spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/ResourceServerConfigurerAdapter.java#L25-L29[two different DSLs] for Resource Server. These are configured by extending `ResourceServerConfigurerAdapter`.
 
-Spring Security exposes the same functionality https://github.com/spring-projects/spring-security/blob/master/config/src/main/java/org/springframework/security/config/annotation/web/builders/HttpSecurity.java#L2308[via the Spring Security DSL], which is configured by extending `WebSecurityConfigurerAdapter`.
+Spring Security exposes the same functionality https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/annotation/web/builders/HttpSecurity.html#oauth2ResourceServer(org.springframework.security.config.Customizer)[via the Spring Security DSL], which is configured by extending `WebSecurityConfigurerAdapter`.
 
 ==== Simplified Enablement
 
